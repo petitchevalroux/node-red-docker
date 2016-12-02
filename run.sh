@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -it -p 1880:1880 -v ~/.node-red:/data --name mynodered petitchevalroux/node-red-docker
+docker run -it -p 1880:1880 -v /home/node-red:/data -u `id -u node-red` --name mynodered petitchevalroux/node-red-docker
